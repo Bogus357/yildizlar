@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Yıldızlara</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      touch-action: none;
+      overscroll-behavior: none;
+      background: #070818;
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #game {
+      width: 100vw;
+      height: 100dvh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #game canvas {
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+</head>
+<body>
+  <div id="game"></div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
